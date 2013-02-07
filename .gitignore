@@ -1,0 +1,12 @@
+# IntelliJ Idea config files
+.idea
+*.iml
+
+# uploaded image files
+images
+
+# sqlite database file
+images.sql
+
+# python compiled files
+*.pyc

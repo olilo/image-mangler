@@ -1,0 +1,18 @@
+{% extends '_template.html' %}
+
+{% block content %}
+    <h2>Mangled Images:</h2>
+    <ul class="images">
+        {% for image in image_list %}
+            <li>
+                <span class="image-title">{{ image.name }}</span>
+                <img class="mangled" width="200" height="200" src="{{ MEDIA_URL }}/{{ image.file }}" />
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div class="clearfix">&nbsp;</div>
+    <div>
+        <a class="uploadlink" href="/upload/">Upload an image</a>
+    </div>
+{% endblock %}
